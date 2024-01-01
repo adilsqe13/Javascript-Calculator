@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Calculator</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container">
+            <h1 class="heading">Javascript Calculator</h1>
+
+            <div class="container-2">
+                <div class="box">
+                    <div class="box-up">
+                        <h2>Number-1</h2>
+                    </div>
+                    <div class="box-down">
+                        <input class="num1 number-input" id="num1" type="number" placeholder="Enter">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-up">
+                        <h2>Operation</h2>
+                    </div>
+
+                    <!-- dropdown box -->
+                    <div class="box-down">
+                        <select class="number-input" name="dropdown" id="dropdown">
+                            <option value="addition">+</option>
+                            <option value="substraction">-</option>
+                            <option value="multiplication">*</option>
+                            <option value="division">/</option>
+                        </select>
+                    </div>
+                    <!-- End dropdown box -->
+                </div>
+                <div class="box">
+                    <div class="box-up">
+                        <h2>Number-2</h2>
+                    </div>
+                    <div class="box-down">
+                        <input class="num2 number-input" id="num2" type="number" placeholder="Enter">
+                    </div>
+                </div>
+            </div>
+
+            <!-- CALCULATE BUTTON -->
+            <button class="button" id="button" onclick="calculate()">Calculate</button>
+            <div class="container-3">
+                <div class="box-up">
+                    <h2>Result</h2>
+                </div>
+                <div class="box-down">
+                    <h1 class="result" id="result">0</h1>
+                </div>
+            </div>
+
+            <!-- RESET BUTTON -->
+            <button class="reset-btn" onclick="reset()">R</button>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
